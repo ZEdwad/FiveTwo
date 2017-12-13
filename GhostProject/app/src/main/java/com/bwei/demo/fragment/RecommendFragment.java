@@ -1,18 +1,35 @@
 package com.bwei.demo.fragment;
 
+import android.os.Bundle;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.ListView;
+
 import com.bwei.demo.R;
 import com.bwei.demo.base.BaseFragment;
 import com.bwei.demo.base.BasePresenter;
+import com.youth.banner.Banner;
+
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import butterknife.Unbinder;
 
 /**
- * Created by ${李晨阳} on 2017/12/12.
- *
+ * Created by ${郭冲冲} on 2017/12/12.
+ * <p>
  * 精选
  */
 
 public class RecommendFragment extends BaseFragment {
+    @BindView(R.id.recommend_bann)
+    Banner banner;
+    @BindView(R.id.recommend_list)
+    ListView listView;
     @Override
     protected void initView() {
+
+
 
     }
 
@@ -30,4 +47,7 @@ public class RecommendFragment extends BaseFragment {
     protected BasePresenter getPresenter() {
         return null;
     }
+
+
+
 }

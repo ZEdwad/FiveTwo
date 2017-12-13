@@ -7,6 +7,8 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import butterknife.ButterKnife;
+
 
 /**
  * @author ${张健}
@@ -32,6 +34,7 @@ public abstract class BaseFragment<V, T extends BasePresenter> extends Fragment 
         if (presenter != null) {
             presenter.attachView((V) this);
         }
+        ButterKnife.bind(this, view);
         return view;
     }
 

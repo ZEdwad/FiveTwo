@@ -5,4 +5,5 @@ package com.bwei.demo.utils.http;
  */
 
 public class Api {
+    public static String url = "http://api.svipmovie.com/front/";
 }
